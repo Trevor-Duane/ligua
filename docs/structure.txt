@@ -1,0 +1,82 @@
+ligua/
+├── backend/                  # Backend server and API
+│   ├── app/                  # Application logic
+│   │   ├── api/              # API endpoints
+│   │   │   ├── tts.py        # Text-to-speech API
+│   │   │   ├── voice_cloning.py # Voice cloning API
+│   │   │   └── auth.py       # Authentication API
+│   │   ├── models/           # Database models (SQLAlchemy, etc.)
+│   │   ├── services/         # Business logic (e.g., TTS service)
+│   │   ├── utils/            # Utility functions (e.g., audio processing)
+│   │   └── config.py         # Configuration settings
+│   ├── tests/                # Unit and integration tests
+│   ├── migrations/           # Database migrations (Alembic, etc.)
+│   ├── requirements.txt      # Python dependencies
+│   └── main.py               # Entry point for the backend server
+│
+├── frontend/                 # Frontend application
+│   ├── public/               # Static assets (images, fonts, etc.)
+│   ├── src/                  # Application source code
+│   │   ├── components/       # Reusable UI components
+│   │   ├── pages/            # Page components (e.g., Home, Dashboard)
+│   │   ├── services/         # API service calls (e.g., TTS API)
+│   │   ├── utils/            # Utility functions (e.g., formatters)
+│   │   ├── App.jsx           # Main application component
+│   │   └── index.js          # Entry point for the frontend
+│   ├── styles/               # Global styles (CSS, SCSS, etc.)
+│   ├── tests/                # Frontend tests
+│   ├── package.json          # Node.js dependencies
+│   └── README.md             # Frontend documentation
+│
+├── ai/                       # Custom AI models and training
+│   ├── datasets/             # Datasets for training
+│   │   ├── raw/              # Raw audio and text data
+│   │   ├── processed/        # Preprocessed data (e.g., spectrograms)
+│   │   └── splits/           # Train/validation/test splits
+│   ├── models/               # Model architectures
+│   │   ├── tts/              # Text-to-speech models (e.g., Tacotron 2)
+│   │   ├── vocoder/          # Vocoder models (e.g., HiFi-GAN)
+│   │   └── voice_cloning/    # Voice cloning models
+│   ├── training/             # Training scripts
+│   │   ├── train_tts.py      # Train TTS model
+│   │   ├── train_vocoder.py  # Train vocoder
+│   │   └── train_cloning.py  # Train voice cloning model
+│   ├── inference/            # Inference scripts
+│   │   ├── tts_inference.py  # Run TTS inference
+│   │   ├── vocoder_inference.py # Run vocoder inference
+│   │   └── cloning_inference.py # Run voice cloning inference
+│   ├── utils/                # Utility scripts (e.g., data preprocessing)
+│   ├── requirements.txt      # Python dependencies for AI
+│   └── README.md             # AI documentation
+│
+├── infrastructure/           # Infrastructure as code (IaC)
+│   ├── docker/               # Dockerfiles for containers
+│   │   ├── backend.Dockerfile
+│   │   ├── frontend.Dockerfile
+│   │   └── ai.Dockerfile
+│   ├── kubernetes/           # Kubernetes deployment files
+│   ├── terraform/            # Terraform scripts for cloud provisioning
+│   └── scripts/              # Deployment and utility scripts
+│
+├── docs/                     # Project documentation
+│   ├── architecture.md       # High-level architecture overview
+│   ├── api.md                # API documentation
+│   ├── models.md             # AI model documentation
+│   └── setup.md              # Setup and installation guide
+│
+├── scripts/                  # Utility scripts
+│   ├── data_preprocessing.py # Preprocess datasets
+│   ├── start_backend.sh      # Start backend server
+│   ├── start_frontend.sh     # Start frontend server
+│   └── deploy.sh             # Deployment script
+│
+├── tests/                    # End-to-end tests
+│   ├── backend_tests/        # Backend API tests
+│   ├── frontend_tests/       # Frontend UI tests
+│   └── ai_tests/            # AI model tests
+│
+├── .env                      # Environment variables
+├── .gitignore                # Git ignore file
+├── LICENSE                   # Project license
+├── README.md                 # Project overview
+└── requirements.txt          # Global Python dependencies
